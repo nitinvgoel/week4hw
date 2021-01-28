@@ -6,6 +6,7 @@ async function pageLoaded() {
   // 🔥 start here: write code to loop through the rides
 //   console.log(json[1][1].passengerDetails)
 // console.log(json[1][1].passengerDetails)
+<p></p>
   for (let i = 0; i < json.length; i++) {
     let ride = json[i]
       if (ride.length > 1) {
@@ -22,7 +23,7 @@ async function pageLoaded() {
                   <i class="fas fa-car-side"></i>
                   <span>Noober Purple</span>
                   </h1>`)
-      } else if (ride[0].numberOfPassengers > 3) {
+      } else if (ride[0].numberOfPassengers > 3)  {
         let outputElement = document.querySelector('.rides')
               outputElement.insertAdjacentHTML('beforeend', `
                 <h1 class="inline-block mt-8 px-4 py-2 rounded-xl text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
